@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Filter Product</title>
+	<script
+      src="https://kit.fontawesome.com/f26332e6df.js"
+      crossorigin="anonymous"
+    ></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<main>
+    
+		<header>
+			<ul class="indicator">
+				<li data-filter="Champions" id="Champions" class="active"><a href="#">Champions</a></li>
+				<li data-filter="Items" id="Items"><a href="#">Items</a></li>
+        <li data-filter="Composition-Items" id="Composition-Items"><a href="#">Composition Items</a></li>
+			</ul>
+      <div class="searchbar">
+        <input
+          type="text"
+          placeholder="Search..."
+          id="searchBar"
+          name="searchBar"
+        />
+        <i class="fa-solid fa-magnifying-glass glass"></i>
+      </div>
+			<div class="filter-condition">
+				<span>View As a</span>
+				<select name="" id="select">
+					<option value="Default">Default</option>
+					<option value="LowToHigh">Low to high</option>
+					<option value="HighToLow">High to low</option>
+					<option value="AZ">A - Z</option>
+					<option value="ZA">Z - A</option>
+				</select>
+			</div>
+		</header>
+		<div class="product-field">
+			<ul class="items" id="items">
+				
+			</ul>
+		</div>
+	</main>
+	
+</body>
+</html>
+<script type="text/javascript" src="script.js"></script>
